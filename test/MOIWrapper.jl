@@ -6,7 +6,6 @@ const MOIT = MathOptInterface.Test
     config = MOIT.TestConfig()
     solver = GurobiOptimizer(OutputFlag=0)
     MOIT.unittest(solver, config, [
-        "solve_singlevariable_obj",
         "solve_affine_interval"
     ])
 end
