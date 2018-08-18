@@ -21,9 +21,7 @@ const MOIB = MathOptInterface.Bridges
             MOIT.TestConfig(atol=1e-3)
         )
     end
-    MOIT.modificationtest(solver, config, [
-        "solve_func_scalaraffine_lessthan"
-    ])
+    MOIT.modificationtest(solver, config)
 end
 
 @testset "Linear tests" begin
